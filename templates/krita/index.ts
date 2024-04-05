@@ -13,6 +13,12 @@ export const generate = ({ projectName }: Input) => {
         type: 'image',
         image: 'lscr.io/linuxserver/krita:latest',
       },
+      deploy: {
+        replicas: 1,
+        command: null,
+        zeroDowntime: true,
+        tiniInit: false,
+      },
       mounts: [
         {
           type: 'volume',

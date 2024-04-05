@@ -17,6 +17,7 @@ export const generate = ({ projectName }: Input) => {
         replicas: 1,
         command: null,
         zeroDowntime: true,
+        tiniInit: false,
       },
       mounts: [
         {
