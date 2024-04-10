@@ -63,7 +63,7 @@ export const authOptions: NextAuthOptions = {
           pass: process.env.SMTP_PASSWORD,
         },
       },
-      from: process.env.EMAIL_FROM ?? 'noreply@sieutoc.website',
+      from: process.env.EMAIL_FROM ?? 'noreply@streampanel.com',
       async sendVerificationRequest({ identifier, url }) {
         const magicTemplate = MagicLinkTemplate({
           confirmUrl: url,
