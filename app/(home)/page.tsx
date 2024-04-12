@@ -2,7 +2,7 @@ import { Box } from '@/components/chakra';
 import { getSession } from '@/lib/auth';
 import { redirect } from 'next/navigation';
 
-import { HeroSection, PricingSection } from './components';
+import { HeroSection } from './components';
 
 export default async function HomePage() {
   const { session } = await getSession();
@@ -14,8 +14,6 @@ export default async function HomePage() {
   return (
     <Box maxW="full">
       <HeroSection />
-
-      <PricingSection />
     </Box>
   );
 }
