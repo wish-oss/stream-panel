@@ -8,6 +8,5 @@ export * from './Logo';
 export * from './NextImage';
 export * from './NextLink';
 export * from './SimpleTable';
-export * from './SubdomainInput';
 export * from './TextEditor';
 export * from './VirtualTable';
